@@ -22,6 +22,7 @@ JavaScript pode ser usado no HTML de três formas principais: externa (arquivo .
 ## Diferença entre script dentro do HTML e script em arquivo separado;
 A principal diferença é a organização e a performance: scripts dentro do HTML (<script>) são ideais para códigos minúsculos e específicos de uma página, carregando junto com o HTML, enquanto scripts em arquivo separado (.js) são recomendados para a maioria dos casos, promovendo a reutilização de código, facilidade de manutenção e cache do navegador.
 
+*VARIÁVEIS:ARQUIVO 03*
 ##  EXEMPLOS ESTÃO NO ARQUIVO 03: Como declarar variáveis;
 Em JavaScript, declara-se variáveis principalmente com let (para valores reatribuíveis) e const (para valores constantes). O uso de var é obsoleto e desencoraja-se por questões de escopo. Variáveis podem armazenar números, strings, objetos, etc., e o JavaScript infere o tipo automaticamente.
 
@@ -34,6 +35,7 @@ A principal diferença entre var, let e const no JavaScript é o escopo (onde a 
 ## O que é escopo de variável;
 O escopo de uma variável é o contexto ou região do código onde ela é definida e pode ser acessada ou modificada. Ele determina a visibilidade da variável: escopo local (dentro de uma função/bloco) ou global (em todo o programa). Compreender o escopo é fundamental para evitar bugs, gerenciar memória e organizar código. 
 
+
 ## Diferença entre == e ===;
 A principal diferença é que == (igualdade) compara apenas os valores, realizando conversão de tipo (coerção) se necessário. Já o === (igualdade estrita) compara tanto o valor quanto o tipo de dado (string, número, etc.), retornando true apenas se ambos forem idênticos, sendo mais seguro e recomendado.
 se encontra no arquivo 
@@ -42,19 +44,26 @@ se encontra no arquivo
 A principal diferença é que != compara apenas o valor (com coerção de tipo), enquanto !== (desigualdade estrita) compara o valor e o tipo. O != retorna falso se os dados forem diferentes, mas conversíveis para o mesmo valor, enquanto !== retorna verdadeiro se forem tipos ou valores diferentes.
 se encontra no arquivo 
 
-## Como declarar funções;
-Declarar funções envolve definir um nome, parâmetros (opcionais) e um bloco de código, usando palavras-chave específicas da linguagem (como function em JS ou def em Python). A estrutura básica inclui o nome da função seguido de parênteses () e chaves {} ou indentação para o corpo. 
 
+
+*ARQUIVO 04:*
 ## Como fazer operações aritméticas e lógicas básicas;
-são realizadas usando operadores padrão e seguem regras de precedência (PEMDAS: Parênteses, Expoentes, Multiplicação/Divisão, Adição/Subtração), onde parênteses têm a maior prioridade e a ordem é da esquerda para a direita.
+São realizadas usando operadores padrão e seguem regras de precedência (PEMDAS: Parênteses, Expoentes, Multiplicação/Divisão, Adição/Subtração), onde parênteses têm a maior prioridade e a ordem é da esquerda para a direita.
 
+*ARQUIVO 05:*
 ## Como usar estruturas condicionais;
 Estruturas condicionais (if, else, elif/else if) direcionam o fluxo do código com base em condições verdadeiras ou falsas. Elas funcionam avaliando expressões lógicas (como ou) e executando blocos de código específicos somente se a condição for atendida, permitindo tomadas de decisão inteligentes.
 se encotra no arquivo 05.
 
+*ARQUIVO 06:*
 ## Como usar estruturas de repetição;
 Estruturas de repetição (loops) automatizam tarefas repetitivas, executando um bloco de código várias vezes enquanto uma condição for verdadeira. Os principais tipos são for (número definido de repetições), while (enquanto a condição for verdadeira) e do-while (executa ao menos uma vez antes de verificar a condição).
 
+*ARQUIVO 07:*
+## Como declarar funções;
+Declarar funções envolve definir um nome, parâmetros (opcionais) e um bloco de código, usando palavras-chave específicas da linguagem (como function em JS ou def em Python). A estrutura básica inclui o nome da função seguido de parênteses () e chaves {} ou indentação para o corpo. 
+
+*ARQUIVO 08:*
 ## Como JavaScript pode interagir com elementos da página.
 JavaScript interage com elementos da página (HTML) manipulando o DOM (Document Object Model). Isso é feito selecionando elementos (por ID, classe, tag), alterando conteúdos (innerHTML, innerText), modificando estilos CSS, adicionando/removendo classes (classList) e respondendo a eventos do usuário (cliques, teclado, carregamento da página).
 

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções</title>
+  </head>
+  <body>
+    <script>
+      //EXEMPLO DE FUNÇÃO SEM PARÂMETRO:
+      function mensagem() {
+        console.log("Bom dia!");
+      }
+
+      mensagem(); //essa função não tem parâmetro pois ela sempre faz a mesma coisa
+
+      //EXEMPLO FUNÇÃO COM PARÃMETRO:
+      function mensagem(nome) {
+        console.log("Bom dia, " + nome + "!");
+      }
+
+      mensagem("Sofia"); //essa tem parâmetro pois ela envia a mensagem com o nome da pessoa
+
+      //EXEMPLO FUNÇÃO COM RETORNO:
+      function soma(a, b) {
+        return a + b;
+      }
+
+      let resultado = soma(4, 6);
+      console.log(resultado); //ela tem retorno pois ela vai retornar o resultado (no caso a soma)
+    </script>
+  </body>
+</html>

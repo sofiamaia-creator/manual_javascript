@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <script>
+//document:
+console.log(document); //ele representa toda a página JS
+
+//getElementById():
+const titulo = document.getElementById("titulo");
+titulo.textContent = "Novo título"; //ele pega um elemento pelo ID 
+
+//querySelector():
+const p = document.querySelector(".texto");
+p.textContent = "Alterado"; //ele pega um elemento usando o jeito do CSS
+
+//.value:
+const nome = document.getElementById("nome").value;
+console.log(nome); //ele pega o valor digitado no input
+
+//.checked:
+const check = document.getElementById("check").checked;
+console.log(check); //serve para ver se um checkbox está marcado
+
+//.textContend:
+document.getElementById("titulo").textContent = "Oi!"; //serve para alterar ou apagar um texto de um elemento
+
+//classList:
+const titulo = document.getElementById("titulo");
+titulo.classList.add("destaque"); //adiciona, remove ou altera classes do CSS
+
+//addEventListener():
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Clicou!");
+}); //executa algo quando acontece um evento
+
+//querySelectorAll():
+const itens = document.querySelectorAll(".texto");
+itens.forEach(function(item) {
+    item.textContent = "Mudou";
+}); //ele seleciona varios elementos de uma vez (como classes por exemplo)
+
+//checkValidity():
+const input = document.getElementById("nome");
+console.log(input.checkValidity()); //verifica se um campo está válido
+
+//DOMContentLoaded:
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Carregou!");
+}); //espera toda a página carregar para executar o JavaScript
+
+//createElement():
+const p = document.createElement("p");
+p.textContent = "Novo elemento"; //serve para criar um elemento
+
+//appendChild():
+document.body.appendChild(p); //adiciona um elemento na página
+
+//remove():
+document.getElementById("titulo").remove(); //serve para remover um elemento dentro da página
+
+
+    </script>
+</body>
+</html>
