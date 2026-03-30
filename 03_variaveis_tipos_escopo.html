@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VARIÁVEIS</title>
+  </head>
+  <body>
+    <script>
+      //EXEMPLO VARIAVEL COM VAR:
+      var nome = "Maria"; //variável nome recebe "Maria"
+
+      //EXEMPLO VARIÁVEL COM LET:
+      let idade = 25; //variável idade recebe "25"
+
+      //EXEMPLO VARIÁVEL COM CONST:
+      const mensagem = "Olá, mundo"; //variável mensagem recebe "Olá mundo"
+
+      //EXEMPLO MOSTRANDO UMA VARIÁVEL ACESSÍVEL FORA DE UM BLOCO EM JS:
+      if (true) {
+        var frase = "Olá, mundo!";
+      }
+
+      console.log(mensagem);
+
+      //EXEMPLO MOSTRANDO UMA VARIÁVEL QUE NÃO PODE SER ACESSADA FORA DO BLOCO:
+      if (true) {
+        let mensagem = "Olá!";
+        console.log(mensagem); // Funciona aqui dentro
+      }
+
+      console.log(mensagem); // Aqui fora não funciona
+
+      //EXEMPLO SIMPLES VARIÁVEL FORA DO ESCOPO:
+      {
+        let idade = 25; // variável criada dentro do bloco
+        console.log(idade); // ✅ funciona: estamos dentro do escopo
+      }
+
+      console.log(idade);
+      //não funciona pois idade está fora das chaves
+      
+    </script>
+  </body>
+</html>
